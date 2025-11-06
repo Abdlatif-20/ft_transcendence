@@ -23,7 +23,7 @@ const Login: React.FC = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {isLogin ? (
-        <SigninPage onNavigate={handleNavigateToSignup} /> // Pass the success handler
+        <SigninPage onNavigate={handleNavigateToSignup} />
       ) : (
         <SignupPage onNavigate={handleNavigateToSignin} />
       )}

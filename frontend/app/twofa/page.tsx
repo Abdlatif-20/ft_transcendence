@@ -1,7 +1,7 @@
 'use client';
 
 import { PiTimerDuotone } from "react-icons/pi";
-import { verify2FA } from "../../components/twoFa"; // Ensure this is compatible with client-side use
+import { verify2FA } from "../../components/twoFa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -18,7 +18,7 @@ const TwofaVerify = () => {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    if (/^\d*$/.test(value) && value.length <= 6) { // Allows only digits and up to 6 characters
+    if (/^\d*$/.test(value) && value.length <= 6) { 
       setCode(value);
     }
   };
